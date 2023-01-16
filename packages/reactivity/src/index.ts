@@ -1,4 +1,20 @@
-let a = 1
+// 入口文件
+
+import {
+  reactive,
+  shallowReactive,
+  readonly,
+  shallowReadonly
+} from './reactive'
 export {
-  a
+  reactive,
+  shallowReactive,
+  readonly,
+  shallowReadonly
 }
+
+
+
+export { effect } from './effect'
+export { ref, toRef,toRefs } from './ref'
+export {computed} from './computed'

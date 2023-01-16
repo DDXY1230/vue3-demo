@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="../reactivity/dist/reactivity.global.js"></script>
+  <script>
+    //  ref原理: Object.defineProperty
+    // 返回是一个对象,有个属性就是value
+    const {reactive, effect, ref } = VueReactivity
+    let name = ref('张三')
+    console.log(name)
+  </script>
+</body>
+</html>

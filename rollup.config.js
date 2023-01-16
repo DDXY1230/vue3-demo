@@ -48,5 +48,5 @@ function createConfig(format, output) {
     ]
   }
 }
-const resultConfig = options.formats.map(format => createConfig(format, outputOptions[format]))
-module.exports = resultConfig
+const rollupConfig = options.formats.map(format => createConfig(format, outputOptions[format]))
+module.exports = rollupConfig

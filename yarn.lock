@@ -48,11 +48,11 @@
   "resolved" "https://registry.npmjs.org/@types/resolve/-/resolve-1.20.2.tgz"
   "version" "1.20.2"
 
-"@vue/reactivity@file:/Users/mac/Desktop/vue3源码/myvue3/packages/reactivity":
+"@vue/reactivity@file:/Users/mac/Desktop/vue3源码/vue3-demo/packages/reactivity":
   "resolved" "file:packages/reactivity"
   "version" "1.0.0"
 
-"@vue/shared@file:/Users/mac/Desktop/vue3源码/myvue3/packages/shared":
+"@vue/shared@file:/Users/mac/Desktop/vue3源码/vue3-demo/packages/shared":
   "resolved" "file:packages/shared"
   "version" "1.0.0"
 

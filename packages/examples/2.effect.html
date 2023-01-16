@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    {{state.name}}
+  </div>
+  <script src="../reactivity/dist/reactivity.global.js"></script>
+  <script>
+    const {reactive, effect} = VueReactivity
+    let obj = {name: '张三', age: {n : 18, list: [1,2,3]}}
+    const state = reactive(obj)
+    effect(() => {
+      console.log('我传了一个方法')
+      // state.name + state.age.n
+      state.new = '我是新添加的值'
+      state.name = "新名字叫Alice"
+      console.log(state.name)
+      app.innerHtml = state.name
+    })
+    setTimeout(() => {
+      state.name = '555'
+      state.age.list[100] = '数组第101的值'
+      console.log(state)
+    }, 1000)
+  </script>
+</body>
+</html>
